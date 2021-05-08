@@ -1,0 +1,169 @@
+.aboutContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #4FDDAA;
+    min-height: 600px;
+    color: white;
+    padding-left: 3%;
+}
+
+.wrapper {
+    max-width: 1380px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+.logo {
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+.aboutmeTitle {
+    padding-top: 80px;
+}
+
+.aboutmeTitle > p {
+    font-size: 1.2rem;
+    margin-bottom: -10px;
+    margin-left: 3px;
+}
+
+.aboutmeTitle > h2 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.aboutmeIntroduction {
+    margin-top: 10px;
+}
+
+.aboutmeFinal {
+    margin-top: 20px;
+    width: 810px;
+}
+
+.aboutmeIntroduction span, .aboutmeFinal span {
+    font-size: 2rem;
+}
+
+.aboutmeIntroduction p, .aboutmeFinal p {
+    font-size: 1.4rem;
+}
+
+.aboutmeSkill {
+    width: 290px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    bottom: 60px;
+}
+
+.aboutmeSkill > p {
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.aboutmeSkill img {
+    width: 35px;
+    margin-top: 17px;
+    cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    .aboutmeTitle {
+        padding-top: 40px;
+    }
+
+    .aboutmeIntroduction span, .aboutmeFinal span {
+        font-size: 1.6rem;
+    }
+    
+    .aboutmeIntroduction p, .aboutmeFinal p {
+        font-size: 1.3rem;
+    }
+
+    .aboutmeIntroduction {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .aboutmeFinal {
+        margin-top: 30px;
+        width: 90%;
+    }
+
+    .aboutmeTitle > p {
+        font-size: 1rem;
+    }
+    
+    .aboutmeTitle > h2 {
+        font-size: 2.3rem;
+    }
+
+    .aboutmeSkill > p {
+        font-size: 1.4rem;
+        width: 100%;
+    }
+    
+    .aboutmeSkill img {
+        width: 30px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .logo {
+        width: 30px;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 470px) { 
+    .wppContainer {
+        display: none;
+    }
+
+    .wppMobile {
+        border-radius: 5px;
+    }
+
+    .wppMobile > p {
+        display: none;
+    }
+
+    .wppMobile > img {
+        width: 25px;
+        border-radius: 3px;
+    }
+}
+
+@media (max-width: 350px) { 
+    .logo {
+        width: 27px;
+        position: fixed;
+        float: right;
+        right: 10px;
+    }
+
+}
+
+@media (max-width: 382px) { 
+    .aboutmeSkill {
+        width: 290px;
+        position: relative;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 100px;
+    }
+
+}

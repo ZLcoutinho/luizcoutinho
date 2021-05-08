@@ -1,0 +1,133 @@
+.wppContainer {
+    position: fixed;
+    bottom: 14.5%;
+    left: 2%;
+}
+
+.wppContainerp {
+    position: fixed;
+    bottom: 14.5%;
+    left: 2%;
+}
+
+.wppMobile {
+    display: none;
+}
+
+.wppMobilep {
+    display: none;
+}
+
+.wppMobileC {
+    display: none;
+}
+
+.textWrapperBalloon {
+    position: fixed;
+    font-size: 13px;
+    line-height: 1;
+    width: 200px;
+    background: #151515;
+    border-radius: 3px;
+    padding: 14px;
+    text-align: center;
+    color: white;
+    animation: moveBalloon infinite 2s;
+}
+
+.textWrapperBalloon:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 18px solid #151515;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #151515;
+    border-bottom: 18px solid transparent;
+    left: 32px;
+    bottom: -14px;
+}
+
+.wppicon {
+    width: 35px;
+    position: relative;
+    cursor: pointer;
+    bottom: -83px;
+    left: 16px;
+}
+
+@keyframes moveBalloon {
+    0%,100% {transform: translateY(0);}
+    50% {transform: translateY(-3px);}  
+}
+
+@media (max-width: 850px) { 
+    .wppContainer {
+        display: none;
+    }
+
+    .wppMobile {
+        position: fixed;
+        bottom: 10px;
+        left: 2%;
+        display: flex;
+        border: 1px solid white;
+        text-decoration: none;
+        width: auto;
+        justify-content: space-between;
+        border-radius: 10px;
+        align-items: center;
+        padding: 4px;
+    }
+
+    .wppMobileC {
+        position: fixed;
+        bottom: 10px;
+        left: 2%;
+        display: flex;
+        border: 1px solid black;
+        text-decoration: none;
+        width: auto;
+        justify-content: space-between;
+        border-radius: 10px;
+        align-items: center;
+        padding: 4px;
+        background-color: #282828;
+    }
+
+    .wppMobile > p {
+        color: white;
+        font-size: 1.1rem;
+        margin-right: 14px;
+    }
+
+    .wppMobileC > p {
+        color: white;
+        font-size: 1.1rem;
+        margin-right: 14px;
+    }
+
+    .wppMobile > img, .wppMobileC > img {
+        width: 25px;
+        border-radius: 3px;
+    }
+}
+
+@media (max-width: 470px) { 
+    .wppContainer {
+        display: none;
+    }
+
+    .wppMobile, .wppMobileC {
+        border-radius: 5px;
+    }
+
+    .wppMobile > p, .wppMobileC > p {
+        display: none;
+    }
+
+    .wppMobile > img, .wppMobileC > img {
+        width: 25px;
+        border-radius: 3px;
+    }
+}
