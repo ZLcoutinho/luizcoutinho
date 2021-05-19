@@ -14,7 +14,7 @@ export default function About () {
                 </div>
                 <div className={Styles.aboutmeIntroduction}>
                     <p><span>Oi!, prazer em conhece-lo</span>
-                    <br />meu nome completo é Luiz Gustavo da Silva coutinho, tenho 16 anos e moro no ES.</p>
+                    <br />meu nome completo é Luiz Gustavo da Silva coutinho, sou um programador front-end.</p>
                 </div>
                 <div className={Styles.aboutmeFinal}>
                     <p><span>Como comecei?</span>
