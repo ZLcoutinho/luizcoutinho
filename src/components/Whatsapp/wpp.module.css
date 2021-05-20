@@ -2,12 +2,14 @@
     position: fixed;
     bottom: 14.5%;
     left: 2%;
+    z-index: 3;
 }
 
 .wppContainerp {
     position: fixed;
     bottom: 14.5%;
     left: 2%;
+    z-index: 3;
 }
 
 .wppMobile {
@@ -33,6 +35,7 @@
     text-align: center;
     color: white;
     animation: moveBalloon infinite 2s;
+    z-index: 3;
 }
 
 .textWrapperBalloon:before {
@@ -46,6 +49,7 @@
     border-bottom: 18px solid transparent;
     left: 32px;
     bottom: -14px;
+    z-index: 3;
 }
 
 .wppicon {
@@ -54,6 +58,7 @@
     cursor: pointer;
     bottom: -83px;
     left: 16px;
+    z-index: 3;
 }
 
 @keyframes moveBalloon {
