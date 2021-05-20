@@ -14,14 +14,17 @@
 
 .wppMobile {
     display: none;
+    z-index: 3;
 }
 
 .wppMobileP {
     display: none;
+    z-index: 3;
 }
 
 .wppMobileC {
     display: none;
+    z-index: 3;
 }
 
 .textWrapperBalloon {
@@ -83,12 +86,14 @@
         border-radius: 10px;
         align-items: center;
         padding: 4px;
+        z-index: 3;
     }
 
     .wppMobileC {
         position: fixed;
         bottom: 10px;
         left: 2%;
+        z-index: 3;
         display: flex;
         border: 1px solid black;
         text-decoration: none;
@@ -104,35 +109,42 @@
         color: white;
         font-size: 1.1rem;
         margin-right: 14px;
+        z-index: 3;
     }
 
     .wppMobileC > p {
         color: white;
         font-size: 1.1rem;
         margin-right: 14px;
+        z-index: 3;
     }
 
     .wppMobile > img, .wppMobileC > img {
         width: 25px;
         border-radius: 3px;
+        z-index: 3;
     }
 }
 
 @media (max-width: 470px) { 
     .wppContainer {
         display: none;
+        z-index: 3;
     }
 
     .wppMobile, .wppMobileC {
         border-radius: 5px;
+        z-index: 3;
     }
 
     .wppMobile > p, .wppMobileC > p {
         display: none;
+        z-index: 3;
     }
 
     .wppMobile > img, .wppMobileC > img {
         width: 25px;
         border-radius: 3px;
+        z-index: 3;
     }
 }

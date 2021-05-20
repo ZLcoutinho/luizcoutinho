@@ -1,12 +1,14 @@
 .navP {
     display: flex;
     justify-content: center;
+    animation: fadeOut 0.5s;
 }
 
 .navA {
     z-index: 999;
     position: absolute;
     right: 0;
+    animation: fadeOutLeft 1s;
 }
 
 .navC {
@@ -14,6 +16,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    animation: fadeOutLeft 1s;
 }
 
 .clear {
@@ -140,6 +143,16 @@
     display: none;
 }
 
+@keyframes fadeOutLeft {
+    0% {opacity: 0; transform: translateX(50px);}
+    100% {opacity: 1; transform: translateX(0px);}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 0; transform: translateY(100px);}
+    100% {opacity: 1; transform: translateY(0px);}
+}
+
 @media (max-width: 720px) {    
     .navA {
         display: none;
@@ -154,6 +167,7 @@
         z-index: 999;
     position: absolute;
     right: 0;
+    animation: fadeOutLeft 1s;
     }
 }
 

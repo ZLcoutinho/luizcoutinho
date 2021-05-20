@@ -19,6 +19,7 @@
     margin: 10px 0 0 20px;
     position: relative;
     z-index: 1;
+    animation: fadeOutRigth 1s;
 }
 
 .header {
@@ -33,6 +34,7 @@
     left: 50%;
     transform: translateX(-50%);
     color: white;
+    animation: fadeOutDown 0.5s;
 }
 
 .siteContainer {
@@ -40,6 +42,7 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 30px;
+    animation: fadeOut 1s;
 }
 
 .site:hover .titleSinopse, .site:hover .date  {
@@ -54,6 +57,7 @@
     border-radius: 5px;
     height: 420px;
     margin-bottom: 20px;
+    
 }
 
 .siteReverse {
@@ -64,7 +68,6 @@
     border-radius: 5px;
     height: 420px;
     flex-direction: row-reverse;
-    
 }
 
 .sinopse {
@@ -144,4 +147,67 @@
     background-position: center;
     background-size: cover;
     opacity: 0.5;
+}
+
+@keyframes fadeOutDown {
+    0% {opacity: 0; transform: translate(-50%, -10px);}
+    100% {opacity: 1; transform: translate(-50%, 0px);}
+}
+
+@keyframes fadeOutRigth {
+    0% {opacity: 0; transform: translateX(-50px);}
+    100% {opacity: 1; transform: translateX(0px);}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 0; transform: translateY(10px);}
+    100% {opacity: 1; transform: translateY(0px);}
+}
+
+@media (max-width: 720px) {
+    .title {
+        font-size: 1.9rem;
+        margin-top: 5px;
+    }
+
+    .titleSinopse {
+        font-size: 1.9rem;
+        line-height: 1.2;
+    }
+
+    .logo {
+        width: 20px;
+    }
+
+    .site, .siteReverse {
+        flex-wrap: wrap;
+        height: 470px;
+    }
+
+    .sinopse {
+        width: 100%;
+        padding-left: 5%;
+        padding-top: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        height: 40%;
+    }
+
+    .imgSinopse {
+        width: 55%;
+        cursor: pointer;
+        padding: 10% 4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        height: 60%;
+    }
+    
+    .imgSinopse {
+        width: 100%;
+       
+    }
 }

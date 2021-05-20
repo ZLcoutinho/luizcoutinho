@@ -23,10 +23,12 @@
     position: absolute;
     left: 5px;
     top: 5px;
+    animation: fadeOutRigth 0.5s;
 } 
 
 .header > h2 {
     font-size: 2.6rem;
+    animation: fadeOutTop 0.5s;
 }
 
 .sectionPrincipal {
@@ -54,6 +56,7 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    animation: fadeOutRigth 0.5s
 }
 
 .emailContact {
@@ -71,6 +74,7 @@
     background-color: white;
     padding: 40px 40px 20px 40px;
     border-radius: 10px;
+    animation: fadeOutLeft 0.8s
 }
 
 .label {
@@ -117,6 +121,21 @@
     color: white;
     padding: 15px 40px;
     border-radius: 4px;
+}
+
+@keyframes fadeOutRigth {
+    0% {opacity: 0; transform: translateX(-80px);}
+    100% {opacity: 1; transform: translateX(0px);}
+}
+
+@keyframes fadeOutTop {
+    0% {opacity: 0; transform: translateY(-80px);}
+    100% {opacity: 1; transform: translateY(0px);}
+}
+
+@keyframes fadeOutLeft {
+    0% {opacity: 0; transform: translateX(80px);}
+    100% {opacity: 1; transform: translateX(0px);}
 }
 
 @media (max-width: 1000px) {

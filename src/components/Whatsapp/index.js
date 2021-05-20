@@ -7,9 +7,10 @@ import { useRouter } from 'next/router'
 export default function Whatsapp () {
     const router = useRouter().pathname
     const rout = useRouter().pathname === '/' ? '/' : '/Principal'
+    const rt = useRouter().pathname === '/Contact' ? '/Contact' : '/Portfolio'
     let routerwppMoblie = ''
 
-    if (router === '/Contact') {
+    if (router === rt) {
         routerwppMoblie = Styles.wppMobileC
     } else if (router === rout) {
         routerwppMoblie = Styles.wppMobileP

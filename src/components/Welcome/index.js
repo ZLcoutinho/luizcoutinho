@@ -7,7 +7,7 @@ export default function Welcome () {
             oi, meu nome é Luiz Gustavo<br />
                 e amo trabalhar com 
             </p>
-            <p>
+            <p className={Styles.pwebWrapper}>
                 <span className={Styles.chave}>{'{'}</span>
                 <span className={Styles.pWeb}>programação para web</span>
                 <span className={Styles.chave}>{'}'}</span>

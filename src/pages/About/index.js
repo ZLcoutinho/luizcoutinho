@@ -8,18 +8,21 @@ export default function About () {
         <div className={Styles.aboutContainer}>
             <div className={Styles.wrapper}>
                 <Sidebar />
-                <div className={Styles.aboutmeTitle}>
-                    <p>SOBRE MIM</p>
-                    <h2>Um programador que ama o que faz</h2>
+                <div className={Styles.aboutWrapper}>
+                    <div className={Styles.aboutmeTitle}>
+                        <p>SOBRE MIM</p>
+                        <h2>Um programador que ama o que faz</h2>
+                    </div>
+                    <div className={Styles.aboutmeIntroduction}>
+                        <p><span>Oi!, prazer em conhece-lo</span>
+                        <br />meu nome completo é Luiz Gustavo da Silva coutinho, sou um programador front-end.</p>
+                    </div>
+                    <div className={Styles.aboutmeFinal}>
+                        <p><span>Como comecei?</span>
+                        <br />Eu comecei a estudar programação em abril de 2020, comecei com CSS, HTML e javaScript, quando eu percebi que eu já estava dominando esses três, eu resolvi aprender algo novo, atualmente estou estudando react js, e futuramente penso em estudar alguma linguagem back-end.</p>
+                    </div>
                 </div>
-                <div className={Styles.aboutmeIntroduction}>
-                    <p><span>Oi!, prazer em conhece-lo</span>
-                    <br />meu nome completo é Luiz Gustavo da Silva coutinho, sou um programador front-end.</p>
-                </div>
-                <div className={Styles.aboutmeFinal}>
-                    <p><span>Como comecei?</span>
-                    <br />Eu comecei a estudar programação em abril de 2020, comecei com CSS, HTML e javaScript, quando eu percebi que eu já estava dominando esses três, eu resolvi aprender algo novo, atualmente estou estudando react js, e futuramente penso em estudar alguma linguagem back-end.</p>
-                </div>
+                
                 <div className={Styles.aboutmeSkill}>
                     <p>Minhas habilidades</p>
                     <a href="https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/HTML5" target="_blank"><img src='/html5.svg' alt="html5"/></a>
