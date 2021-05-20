@@ -27,6 +27,7 @@ export default function About () {
                     <a href="https://www.javascript.com/" target="_blank"><img src='/js.svg' alt="js"/></a>
                     <a href="https://reactjs.org/" target="_blank"><img src='/reactjs.svg' alt="reactjs"/></a>
                     <a href="https://firebase.google.com/" target="_blank"><img src='/firebase.svg' alt="firebase"/></a>
+                    <a href="https://nextjs.org/" target="_blank"><img className={Styles.nextIco} src="/next-js.svg" alt="next-js"/></a>
                 </div> 
                 <img className={Styles.logo} src="/logo.svg"/>
             </div>

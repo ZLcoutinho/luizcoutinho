@@ -79,6 +79,11 @@
     cursor: pointer;
 }
 
+img.nextIco {
+    position: relative;
+    bottom: -4px;
+}
+
 @media (max-width: 850px) {
     .aboutmeTitle {
         padding-top: 40px;
