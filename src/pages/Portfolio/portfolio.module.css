@@ -4,6 +4,7 @@
     background-color: #F8354C;
     min-height: 600px;
     color: white;
+    color: #F8354C;
 }
 
 .wrapper {
@@ -31,6 +32,7 @@
     font-size: 45px;
     left: 50%;
     transform: translateX(-50%);
+    color: white;
 }
 
 .siteContainer {
