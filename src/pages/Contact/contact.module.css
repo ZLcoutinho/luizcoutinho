@@ -123,26 +123,6 @@
     border-radius: 4px;
 }
 
-@keyframes fadeOutRigth {
-    0% {opacity: 0; transform: translateX(-80px);}
-    100% {opacity: 1; transform: translateX(0px);}
-}
-
-@keyframes fadeOutRigthE {
-    0% {opacity: 0; transform: translate(-80px, -50%);}
-    100% {opacity: 1; transform: translate(0px, -50%);}
-}
-
-@keyframes fadeOutTop {
-    0% {opacity: 0; transform: translateY(-80px);}
-    100% {opacity: 1; transform: translateY(0px);}
-}
-
-@keyframes fadeOutLeft {
-    0% {opacity: 0; transform: translateX(80px);}
-    100% {opacity: 1; transform: translateX(0px);}
-}
-
 @media (max-width: 1000px) {
     .formContainer {
         padding: 20px 20px;

@@ -90,21 +90,6 @@ img.nextIco {
     bottom: -4px;
 }
 
-@keyframes fadeOutRigth {
-    0% {opacity: 0; transform: translateX(-80px);}
-    100% {opacity: 1; transform: translateX(0px);}
-}
-
-@keyframes fadeOutTop {
-    0% {opacity: 0; transform: translate(-50%, 80px);}
-    100% {opacity: 1; transform: translate(-50%, 0px);}
-}
-
-@keyframes fadeOutLeft {
-    0% {opacity: 0; transform: translateX(80px);}
-    100% {opacity: 1; transform: translateX(0px);}
-}
-
 @media (max-width: 850px) {
     .aboutmeTitle {
         padding-top: 40px;

@@ -143,16 +143,6 @@
     display: none;
 }
 
-@keyframes fadeOutLeft {
-    0% {opacity: 0; transform: translateX(50px);}
-    100% {opacity: 1; transform: translateX(0px);}
-}
-
-@keyframes fadeOut {
-    0% {opacity: 0; transform: translateY(100px);}
-    100% {opacity: 1; transform: translateY(0px);}
-}
-
 @media (max-width: 720px) {    
     .navA {
         display: none;

@@ -23,8 +23,3 @@
     bottom: 14.5%;
     left: 2%;
 }
-
-@keyframes fadeOutRigth {
-    0% {opacity: 0; transform: translateX(-50px);}
-    100% {opacity: 1; transform: translateX(0px);}
-}
