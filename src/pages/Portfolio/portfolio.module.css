@@ -149,6 +149,12 @@
     opacity: 0.5;
 }
 
+@media (max-width: 1000px) { 
+   .site, .siteReverse {
+       width: 90%;
+       }
+}
+
 @media (max-width: 720px) {
     .title {
         font-size: 1.9rem;
@@ -167,6 +173,7 @@
     .site, .siteReverse {
         flex-wrap: wrap;
         height: 470px;
+        max-width: 400px;
     }
 
     .sinopse {
