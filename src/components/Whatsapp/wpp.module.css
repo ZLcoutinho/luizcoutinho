@@ -64,6 +64,16 @@
     z-index: 3;
 }
 
+@keyframes moveBalloon {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2px);
+    }
+}
+
 @media (max-width: 850px) { 
     .wppContainer {
         display: none;
